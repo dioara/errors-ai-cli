@@ -5,7 +5,7 @@ AI-powered code analysis CLI for finding bugs and security vulnerabilities in yo
 ## Installation
 
 ```bash
-npm install -g @errors-ai/cli
+npm install -g @lampstand/errors-ai-cli
 ```
 
 ## Quick Start
@@ -193,7 +193,7 @@ jobs:
       - uses: actions/checkout@v3
       
       - name: Install Errors.AI CLI
-        run: npm install -g @errors-ai/cli
+        run: npm install -g @lampstand/errors-ai-cli
       
       - name: Authenticate
         run: errors-ai login --api-key ${{ secrets.ERRORS_AI_API_KEY }}
@@ -208,7 +208,7 @@ jobs:
 code_analysis:
   stage: test
   script:
-    - npm install -g @errors-ai/cli
+    - npm install -g @lampstand/errors-ai-cli
     - errors-ai login --api-key $ERRORS_AI_API_KEY
     - errors-ai check src/ --fail-on high
 ```

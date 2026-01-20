@@ -324,7 +324,7 @@ node bin/errors-ai.js analyze test.js
 ### 1. Update package.json
 
 Ensure these fields are correct:
-- `name`: `@errors-ai/cli`
+- `name`: `@lampstand/errors-ai-cli`
 - `version`: `1.0.0`
 - `repository`: Your GitHub repo URL
 - `homepage`: `https://errors.ai`
@@ -381,7 +381,7 @@ Add these topics to the GitHub repo:
 ### NPM Package
 
 ```bash
-npm install -g @errors-ai/cli
+npm install -g @lampstand/errors-ai-cli
 ```
 
 ### Homebrew Formula (Future)
@@ -405,7 +405,7 @@ end
 
 ```dockerfile
 FROM node:18-alpine
-RUN npm install -g @errors-ai/cli
+RUN npm install -g @lampstand/errors-ai-cli
 ENTRYPOINT ["errors-ai"]
 ```
 
@@ -415,7 +415,7 @@ ENTRYPOINT ["errors-ai"]
 
 1. ✅ **Implement backend endpoints** (`/cli/auth`, `/api/cli/authorize`)
 2. ✅ **Test authentication flow** end-to-end
-3. ✅ **Publish to NPM** as `@errors-ai/cli`
+3. ✅ **Publish to NPM** as `@lampstand/errors-ai-cli`
 4. ✅ **Create GitHub repository** at `dioara/errors-ai-cli`
 5. ✅ **Update website** to mention CLI tool
 6. ✅ **Write blog post** announcing CLI launch
@@ -437,7 +437,7 @@ Find bugs in your code before they reach production.
 ✅ CI/CD ready
 ✅ Free tier available
 
-npm install -g @errors-ai/cli
+npm install -g @lampstand/errors-ai-cli
 
 Try it now: https://errors.ai/cli
 ```
