@@ -1,0 +1,49 @@
+{
+  "name": "@errors-ai/cli",
+  "version": "1.0.0",
+  "description": "AI-powered code analysis CLI for all programming languages",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "errors-ai": "./bin/errors-ai.js"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "start": "node bin/errors-ai.js"
+  },
+  "keywords": [
+    "errors",
+    "ai",
+    "code-analysis",
+    "linter",
+    "static-analysis",
+    "security",
+    "cli"
+  ],
+  "author": "Errors.AI",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dioara/errors-ai-cli.git"
+  },
+  "homepage": "https://errors.ai",
+  "bugs": {
+    "url": "https://github.com/dioara/errors-ai-cli/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "glob": "^10.3.10",
+    "inquirer": "^9.2.12",
+    "open": "^9.1.0",
+    "ora": "^7.0.1",
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
