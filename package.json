@@ -1,6 +1,6 @@
 {
   "name": "@lampstand/errors-ai-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AI-powered code analysis CLI for all programming languages",
   "main": "src/index.js",
   "type": "module",
